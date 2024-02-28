@@ -1,16 +1,16 @@
 # Regular Expression Tutorial
 # 🎨Matching a Hex Value 🎨
 
-This tutorial file goes step by step through each part of the regex espression for hexadecimal color codes and breaks down what each part of the expression means. 
+This tutorial file goes step by step through each part of the regex expression for hexadecimal color codes and breaks down what each part of the expression means. 
 
 ## Summary
 
-Hex value color codes are used in web development for styling. There are upwards of 16 million colors in the hex value format, so understanding how a string complies with the formatting of this color code pattern is helpful in better understanding the background of web develipment. 
+Hex value color codes are used in web development for styling. There are upwards of 16 million colors in the hex value format, so understanding how a string complies with the formatting of this color code pattern is helpful in better understanding the background of web development. 
 
 *Below is a video showing different hex codes for different colors:*
 
 
-![portfolio demo](./Assets/colors.gif)
+![color demo](./Assets/colors.gif)
 
 ## Table of Contents
 
@@ -28,7 +28,7 @@ Hex value color codes are used in web development for styling. There are upwards
 ### Anchors
 Anchors in a regular expression are indicators that the string is starting or ending. The '^' and '$' in this expression are both anchors which tell the computer where to start looking for the expression and when the expression is over.
 
->*The following hex value statement highlights the anchors in gold:*
+>*The following hex value statement highlights the anchors :*
 
 >/`^`#?([a-f0-9]{6}|[a-f0-9]{3})`$`/
 
@@ -36,9 +36,9 @@ Anchors in a regular expression are indicators that the string is starting or en
 * **End:** '$' indicates the end of the string. 
 
 ### Quantifiers
-Quantifiers set limits on your regex string. They can either indicate things that need to be present in the string or can set a number of characters that a certian part of the string needs to have. The two quantifiers that are present in hex value strings are question marks and curly brackets.
+Quantifiers set limits on your regex string. They can either indicate things that need to be present in the string or can set a number of characters that a certain part of the string needs to have. The two quantifiers that are present in hex value strings are question marks and curly brackets.
 
->*The following hex value statement highlights the qualtifiers in gold:*
+>*The following hex value statement highlights the quantifiers:*
 
 >/^#`?`([a-f0-9]`{6}`|[a-f0-9]`{3}`)$/
 
@@ -50,7 +50,7 @@ Quantifiers set limits on your regex string. They can either indicate things tha
 ### Grouping Constructs
 Grouping constructs are used to group parts of the regular expression together. For the hex value regex, there is just one grouping with two patterns in it. 
 
->*The following hex value statement highlights the grouping constructs in gold:*
+>*The following hex value statement highlights the grouping constructs:*
 
 >/^#?`(`[a-f0-9]{6}|[a-f0-9]{3}`)`$/
 
@@ -60,7 +60,7 @@ Grouping constructs are used to group parts of the regular expression together. 
 ### Bracket Expressions
 Inside the bracket expressions is where the set of characters that any character within the input string must be equal to. 
 
->*The following hex value statement highlights the bracket expressions in gold:*
+>*The following hex value statement highlights the bracket expressions:*
 
 >/^#?(`[a-f0-9]`{6}|`[a-f0-9]`{3})$/
 
@@ -70,7 +70,7 @@ Inside the bracket expressions is where the set of characters that any character
 
 The character classes define a set of characters that the input string needs to match. 
 
->*The following hex value statement highlights the character classes in gold:*
+>*The following hex value statement highlights the character classes :*
 
 >/^#?([`a-f0-9`]{6}|[`a-f0-9`]{3})$/
 
@@ -81,7 +81,7 @@ The character classes define a set of characters that the input string needs to 
 ### The OR Operator
 The OR operator indicates a choice between two options within the expression. 
 
->*The following hex value statement highlights the character classes in gold:*
+>*The following hex value statement highlights the character classes:*
 
 
 >/^#?([a-f0-9]{6}`|`[a-f0-9]{3})$/
@@ -92,7 +92,7 @@ The OR operator indicates a choice between two options within the expression.
 
 
 ### Flags
-Though the hex value regex doesn't contain any flags, it's still helpful to understand what flags are in case you come across them. As literals, regex expressions must be wrapped in slash characters. Occasionally there will be an extra character at the end of the regex after the slash which is known as a flag. The flag inficates extra functionality or limits for the specific regex.
+Though the hex value regex doesn't contain any flags, it's still helpful to understand what flags are in case you come across them. As literals, regex expressions must be wrapped in slash characters. Occasionally there will be an extra character at the end of the regex after the slash which is known as a flag. The flag indicates extra functionality or limits for the specific regex.
 
 Here are the three most specific flags and what they mean
 
@@ -103,7 +103,7 @@ Here are the three most specific flags and what they mean
 ### Character Escapes
 Character escapes allow special characters to be used in a regex pattern. 
 
->*The following hex value statement highlights the character escape in gold:*
+>*The following hex value statement highlights the character escape :*
 
 >/^`#`?([a-f0-9]{6}|[a-f0-9]{3})$/
 
