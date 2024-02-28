@@ -113,3 +113,6 @@ Character escapes allow special characters to be used in a regex pattern.
 
 My name is Hunter Reed and I am a student in the University of Denver Full Stack Bootcamp. I can be reached through my github profile or email:
 
+* GitHub: [@huntrreed](https://github.com/huntrreed)
+
+* Email: huntrreed@gmail.com
